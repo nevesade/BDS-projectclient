@@ -12,6 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.bdsprojectclient.bdsProjectClient.dto.ClientDTO;
 import com.bdsprojectclient.bdsProjectClient.entities.Client;
 import com.bdsprojectclient.bdsProjectClient.repositories.ClientRepository;
+import com.bdsprojectclient.bdsProjectClient.services.serices.exceptions.ResourceNotFoundException;
 
 @Service
 public class ClientService {
@@ -31,7 +32,7 @@ public class ClientService {
 	public ClientDTO findById(Long id) {
 	
 		Optional<Client> obj = repository.findById(id);
-		Client entity = obj.get();
+		Client entity = obj.orElseThrow(() -> new ResourceNotFoundException("Entity not found"));
 		return new ClientDTO(entity);
 		
 		
