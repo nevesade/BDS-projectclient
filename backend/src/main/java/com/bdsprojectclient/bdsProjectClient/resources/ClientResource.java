@@ -1,7 +1,6 @@
 package com.bdsprojectclient.bdsProjectClient.resources;
 
 import java.net.URI;
-import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -37,7 +36,7 @@ public class ClientResource {
 			@RequestParam(value = "orderBy", defaultValue = "name") String orderBy )
 	{
 		
-		PageRequest pageRequest = PageRequest.of(page, linesPerPage, Direction.valueOf(direction), orderBy);
+		PageRequest pageRequest = PageRequest.of(page, linesPerPage, Direction.valueOf(direction), orderBy );
 		
 		Page<ClientDTO> list = service.findAllPaged(pageRequest);
 

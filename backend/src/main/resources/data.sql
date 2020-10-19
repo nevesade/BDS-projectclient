@@ -8,3 +8,7 @@ INSERT INTO tb_client (name, income, cpf, birthdate, children ) VALUES ('Pedro N
 INSERT INTO tb_client (name, income, cpf, birthdate, children ) VALUES ('Mauro Mata', 200, 23345454643,TIMESTAMP WITH TIME ZONE '1994-08-20T10:30:00Z', 3 );
 INSERT INTO tb_client (name, income, cpf, birthdate, children ) VALUES ('Lopes Major', 400, 23345454643,TIMESTAMP WITH TIME ZONE '1975-02-20T10:30:00Z', 2 );
 INSERT INTO tb_client (name, income, cpf, birthdate, children ) VALUES ('Carlos Ferreira', 200,74564478552,TIMESTAMP WITH TIME ZONE '1996-04-20T10:30:00Z', 3 );
+INSERT INTO tb_client (name, income, cpf, birthdate, children ) VALUES ('Antonio Nunes', 450, 23346434545,TIMESTAMP WITH TIME ZONE '2000-12-20T10:30:00Z', 4 );
+INSERT INTO tb_client (name, income, cpf, birthdate, children ) VALUES ('Sousa Ponte', 200, 23453454643,TIMESTAMP WITH TIME ZONE '1965-01-20T10:30:00Z', 3 );
+INSERT INTO tb_client (name, income, cpf, birthdate, children ) VALUES ('Fernando Ceita', 700, 23345454643,TIMESTAMP WITH TIME ZONE '1975-02-20T10:30:00Z', 2 );
+INSERT INTO tb_client (name, income, cpf, birthdate, children ) VALUES ('Nando Frotas', 456,44787456552,TIMESTAMP WITH TIME ZONE '1988-04-20T10:30:00Z', 3 );
